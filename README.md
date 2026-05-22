@@ -1,13 +1,13 @@
 # DIGITAL PORTFOLIO
 
-# Welcome to My Digital Portfolio
+## Welcome to My Digital Portfolio
 
 Hello, my name is Litha Owethu Mazibuko. I am a third-year Information Technology student at Cape Peninsula University of Technology (CPUT). This digital portfolio showcases my skills, experience, projects, CV, and reflections completed as part of my Work Readiness Training.
 
 ---
 # My CV
 
-# Litha Owethu Mazibuko
+## Litha Owethu Mazibuko
 
 📍 14 Raivenscraig Rd, Woodstock, Cape Town  
 📞 067 405 3861 / 072 179 8243  
