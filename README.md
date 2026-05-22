@@ -5,7 +5,8 @@
 Hello, my name is Litha Owethu Mazibuko. I am a third-year Information Technology student at Cape Peninsula University of Technology (CPUT). This digital portfolio showcases my skills, experience, projects, CV, and reflections completed as part of my Work Readiness Training.
 
 ---
-# My CV
+# Curriculum Vitae(CV)
+[View my CV](https://github.com/Litha2810/Digital-Portfolio/blob/efdc2b85df63bd8c41b70f9a943c8e84ba31ca1e/CV/Litha's%20Cv.pdf.pdf)
 
 ## Litha Owethu Mazibuko
 
