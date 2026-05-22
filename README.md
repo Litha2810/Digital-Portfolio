@@ -35,11 +35,11 @@ Motivated and detail-oriented Information Technology student currently in my thi
 
 # Education
 
-# Cape Peninsula University of Technology
+### Cape Peninsula University of Technology
 **Diploma in Information Technology**  
 2024 – Present
 
-# Noorder Paarl High School
+### Noorder Paarl High School
 **National Senior Certificate (Grade 12)**  
 2023
 
@@ -54,7 +54,7 @@ Programming Languages:
 Java, PHP, HTML, CSS, JavaScript 
 Database: MySQL Microsoft Word, Excel, Outlook Data Capturing 
 
-# Professional Skills 
+## Professional Skills 
 Excellent time management
 Strong attention to detail
 Customer service oriented
