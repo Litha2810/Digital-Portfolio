@@ -1,19 +1,10 @@
 
-/* =========================================
-   BOOK SWAP SA AGILE DIGITAL PORTFOLIO
-   NAVIGATION + SHARED TRELLO EVIDENCE
-========================================= */
+/* ========================================
+   BOOK SWAP SA AGILE PORTFOLIO
+   NAVIGATION AND EVIDENCE
+======================================== */
 
-// All portfolio pages
-const pages = [
-  "home",
-  "team-charter",
-  "user-stories",
-  "product-backlog",
-  "sprint-backlog",
-  "agile-logbook"
-];
-
+// Portfolio pages
 const pageTitles = {
   "home": "Home",
   "team-charter": "Agile Team Charter",
@@ -23,168 +14,121 @@ const pageTitles = {
   "agile-logbook": "Agile Logbook"
 };
 
-/* =========================================
-   PAGE NAVIGATION
-========================================= */
+/* ========================================
+   UPDATE ACTIVE NAVIGATION
+======================================== */
 
-function showPage() {
+function updateNavigation() {
 
-  const requested = location.hash.slice(1);
+  const requested = window.location.hash.slice(1);
 
-  const selected = pages.includes(requested)
+  const selected = Object.hasOwn(pageTitles, requested)
     ? requested
     : "home";
 
-  // Show selected page
-  document.querySelectorAll(".page").forEach(page => {
-    page.classList.toggle(
-      "active",
-      page.id === selected
-    );
-  });
-
-  // Highlight active navigation link
-  document.querySelectorAll(".nav-link").forEach(link => {
-    const isActive =
-      link.getAttribute("href") === "#" + selected;
-
-    link.classList.toggle("active", isActive);
-
-    if (isActive) {
-      link.setAttribute("aria-current", "page");
-    } else {
-      link.removeAttribute("aria-current");
-    }
-  });
-
-  // Change the browser tab title
+  // Update browser title
   document.title =
     pageTitles[selected] + " | Book Swap SA";
 
-  // Return to top of selected page
+  // Highlight selected menu item
+  document.querySelectorAll(".nav-link")
+    .forEach(link => {
+
+      const isActive =
+        link.getAttribute("href") === "#" + selected;
+
+      link.classList.toggle("active", isActive);
+
+      if (isActive) {
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+
+    });
+
+  // Return to top of the selected section
   window.scrollTo(0, 0);
 }
 
-/* =========================================
-   ORIGINAL TRELLO SCREENSHOTS
-========================================= */
+/* ========================================
+   ORIGINAL TRELLO EVIDENCE
+======================================== */
 
-// One original source folder.
-// Different portfolio sections reuse
-// selected images from this same folder.
+// Reuse the same Trello board across
+// User Stories, Product Backlog and Sprint Backlog.
 
 const trelloFolder = "evidence/product-backlog/";
 
-const allTrelloScreenshots = Array.from(
+const productBacklog = Array.from(
   { length: 19 },
-  (_, i) => `product-backlog-${i + 1}.jpeg`
+  (_, i) => "product-backlog-" + (i + 1) + ".jpeg"
 );
 
-/* =========================================
-   USER STORIES EVIDENCE
-========================================= */
-
-// Selected screenshots from the original board.
-// These show requirements-related activities,
-// user stories, interface planning and development.
-
+// Selected User Stories evidence
 const userStoryEvidence = [
   {
     file: "product-backlog-7.jpeg",
-    caption:
-      "Sprint 3: Requirements and User Story Planning",
-    explanation:
-      "Shows the Create User Stories task and nearby system analysis activities."
-  },
-  {
-    file: "product-backlog-8.jpeg",
-    caption:
-      "Sprint 3: Database and System Design",
-    explanation:
-      "Shows supporting tasks associated with planning the system."
+    caption: "Sprint 3 — User Stories and Requirements",
+    note:
+      "Shows the planning of user stories and " +
+      "system requirements."
   },
   {
     file: "product-backlog-10.jpeg",
-    caption:
-      "Sprint 4: Textbook Listings and Search Interface",
-    explanation:
-      "Shows interface design tasks related to the planned textbook features."
+    caption: "Sprint 4 — Textbook Interface Planning",
+    note:
+      "Shows interface design tasks related " +
+      "to textbook listings and search."
   },
   {
     file: "product-backlog-13.jpeg",
-    caption:
-      "Sprint 5: Textbook Listings and Search Functionality",
-    explanation:
-      "Shows development cards including Day 37: Search and Filter Functionality."
+    caption: "Sprint 5 — Search and Filter Development",
+    note:
+      "Shows development activities related " +
+      "to textbook search and filtering."
   }
 ];
 
-/* =========================================
-   SPRINT BACKLOG EVIDENCE
-========================================= */
-
-// The same Trello board provides
-// evidence of planned sprint activities.
-
-const sprintEvidence = [
+// Selected Sprint Backlog evidence
+const sprintBacklogEvidence = [
   {
     file: "product-backlog-1.jpeg",
-    caption:
-      "Sprint 1: Project Initiation",
-    explanation:
-      "Shows early planning tasks, including problem statement and stakeholders."
+    caption: "Sprint 1 — Project Initiation"
   },
   {
     file: "product-backlog-4.jpeg",
-    caption:
-      "Sprint 2: Business Planning",
-    explanation:
-      "Shows planned business goals, business model and marketing activities."
+    caption: "Sprint 2 — Business Planning"
   },
   {
     file: "product-backlog-7.jpeg",
-    caption:
-      "Sprint 3: System Analysis",
-    explanation:
-      "Shows requirements and user story planning."
+    caption: "Sprint 3 — System Analysis"
   },
   {
     file: "product-backlog-10.jpeg",
-    caption:
-      "Sprint 4: UI/UX Design",
-    explanation:
-      "Shows prototype and interface design tasks."
+    caption: "Sprint 4 — UI/UX Design"
   },
   {
     file: "product-backlog-13.jpeg",
-    caption:
-      "Sprint 5: Core Development",
-    explanation:
-      "Shows textbook listing, search and filtering development tasks."
+    caption: "Sprint 5 — Core Development"
   },
   {
     file: "product-backlog-15.jpeg",
-    caption:
-      "Sprint 6: Testing and Quality Assurance",
-    explanation:
-      "Shows testing activities including registration, login and textbook listings."
+    caption: "Sprint 6 — Testing and Quality Assurance"
   },
   {
     file: "product-backlog-18.jpeg",
-    caption:
-      "Sprint 7: Project Finalisation",
-    explanation:
-      "Shows user manual, system review and final presentation tasks."
+    caption: "Sprint 7 — Project Finalisation"
   }
 ];
 
-/* =========================================
-   AGILE LOGBOOK SCREENSHOTS
-========================================= */
+/* ========================================
+   AGILE LOGBOOK EVIDENCE
+======================================== */
 
 const logbookFolder = "evidence/agile-logbook/";
 
-const logbookEvidence = [
+const logbook = [
   "01_July_14-17_Logbook_Tuesday.jpeg",
   "02_July_14-17_Logbook_Wednesday_Thrursday.jpeg",
   "03_July_14-17_Logbook_Friday.jpeg",
@@ -195,181 +139,168 @@ const logbookEvidence = [
   "08_August_10-14_Logbook_Thursday_Friday.jpeg"
 ];
 
-/* =========================================
-   CREATE IMAGE GALLERY
-========================================= */
+/* ========================================
+   GENERATE SCREENSHOT GALLERIES
+======================================== */
 
-function createGallery(
-  elementId,
-  folder,
-  items
-) {
+function renderGallery(id, folder, items) {
 
-  const gallery = document.getElementById(elementId);
+  const gallery = document.getElementById(id);
 
-  if (!gallery) return;
-
-  gallery.replaceChildren();
-
-  if (items.length === 0) {
-    const message = document.createElement("p");
-
-    message.className = "gallery-message";
-    message.textContent =
-      "Original supporting evidence is not available.";
-
-    gallery.appendChild(message);
+  if (!gallery) {
     return;
   }
 
+  gallery.replaceChildren();
+
   items.forEach((item, index) => {
 
-    // Accept either a filename or an
-    // object containing file and caption.
     const fileName =
-      typeof item === "string"
-        ? item
-        : item.file;
+      typeof item === "string" ? item : item.file;
 
     const captionText =
       typeof item === "string"
         ? fileName
             .replace(/\.[^.]+$/, "")
-            .replace(/_/g, " ")
+            .replaceAll("_", " ")
         : item.caption;
-
-    const explanation =
-      typeof item === "string"
-        ? ""
-        : item.explanation || "";
 
     const imagePath =
       folder + encodeURIComponent(fileName);
 
-    // Figure container
+    // Figure
     const figure = document.createElement("figure");
 
     // Full-size image link
     const link = document.createElement("a");
+
     link.href = imagePath;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
 
     // Image
-    const image = document.createElement("img");
-    image.src = imagePath;
-    image.loading = "lazy";
-    image.alt = captionText;
+    const img = document.createElement("img");
 
-    // Caption
-    const caption = document.createElement("figcaption");
+    img.src = imagePath;
+    img.loading = "lazy";
+    img.alt = captionText;
 
-    const heading = document.createElement("strong");
-    heading.textContent =
-      `Figure ${index + 1}: ${captionText}`;
+    // Handle missing image
+    img.addEventListener("error", () => {
 
-    caption.appendChild(heading);
-
-    if (explanation) {
-      const detail = document.createElement("p");
-      detail.textContent = explanation;
-      caption.appendChild(detail);
-    }
-
-    // Missing image handling
-    image.addEventListener("error", () => {
-      figure.replaceChildren();
-      figure.classList.add("gallery-message");
       figure.textContent =
-        "Could not load " + fileName +
-        ". Check the filename and folder.";
+        "Image unavailable: " + fileName +
+        ". Check the folder and filename.";
+
+      figure.classList.add("gallery-message");
+
     });
 
-    // Assemble image card
-    link.appendChild(image);
-    figure.append(link, caption);
+    // Image caption
+    const caption = document.createElement("figcaption");
+
+    const title = document.createElement("strong");
+
+    title.textContent =
+      "Figure " + (index + 1) + ": " + captionText;
+
+    caption.appendChild(title);
+
+    // Optional evidence explanation
+    if (
+      typeof item !== "string" &&
+      item.note
+    ) {
+
+      const explanation = document.createElement("p");
+
+      explanation.textContent = item.note;
+
+      caption.appendChild(explanation);
+    }
+
+    // Assemble the card
+    link.appendChild(img);
+
+    figure.appendChild(link);
+    figure.appendChild(caption);
 
     gallery.appendChild(figure);
+
   });
 }
 
-/* =========================================
-   LOAD ALL EVIDENCE GALLERIES
-========================================= */
+/* ========================================
+   INITIALISE WEBSITE
+======================================== */
 
-function loadGalleries() {
+function initialiseWebsite() {
 
-  // User Stories: selected original Trello images
-  createGallery(
+  // User Stories evidence
+  renderGallery(
     "user-stories-gallery",
     trelloFolder,
     userStoryEvidence
   );
 
-  // Product Backlog: all 19 Trello images
-  createGallery(
+  // Product Backlog evidence
+  renderGallery(
     "product-gallery",
     trelloFolder,
-    allTrelloScreenshots
+    productBacklog
   );
 
-  // Sprint Backlog: seven sprint examples
-  createGallery(
+  // Sprint Backlog evidence
+  renderGallery(
     "sprint-gallery",
     trelloFolder,
-    sprintEvidence
+    sprintBacklogEvidence
   );
 
-  // Agile Logbook: eight dated records
-  createGallery(
+  // Agile Logbook evidence
+  renderGallery(
     "logbook-gallery",
     logbookFolder,
-    logbookEvidence
+    logbook
   );
+
+  // Highlight the selected page
+  updateNavigation();
+
+  // Respond to navigation changes
+  window.addEventListener(
+    "hashchange",
+    updateNavigation
+  );
+
+  // Support clicking the current page again
+  document.querySelectorAll('a[href^="#"]')
+    .forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        if (
+          link.getAttribute("href") ===
+          window.location.hash
+        ) {
+          updateNavigation();
+        }
+
+      });
+
+    });
 }
 
-/* =========================================
-   INITIALISE WEBSITE
-========================================= */
-
-function startWebsite() {
-
-  // Display screenshot evidence
-  loadGalleries();
-
-  // Enable one-page-at-a-time navigation
-  document.documentElement.classList.add("js-enabled");
-
-  // Open Home or the selected page
-  showPage();
-
-  // Navigation changes
-  window.addEventListener("hashchange", showPage);
-
-  // Handle clicking the current page's link
-  document.addEventListener("click", event => {
-
-    const link = event.target.closest('a[href^="#"]');
-
-    if (!link) return;
-
-    const target = link.getAttribute("href");
-
-    if (
-      pages.includes(target.slice(1)) &&
-      target === location.hash
-    ) {
-      showPage();
-    }
-  });
-}
-
-// Start once HTML is loaded
+// Run when HTML is ready
 if (document.readyState === "loading") {
+
   document.addEventListener(
     "DOMContentLoaded",
-    startWebsite
+    initialiseWebsite
   );
+
 } else {
-  startWebsite();
+
+  initialiseWebsite();
+
 }
