@@ -1,11 +1,11 @@
 
-/* ======================================
+/* =========================================
    BOOK SWAP SA AGILE DIGITAL PORTFOLIO
-   COMPLETE JAVASCRIPT
-====================================== */
+   NAVIGATION + SHARED TRELLO EVIDENCE
+========================================= */
 
-// Portfolio section IDs
-const pageIds = [
+// All portfolio pages
+const pages = [
   "home",
   "team-charter",
   "user-stories",
@@ -14,280 +14,362 @@ const pageIds = [
   "agile-logbook"
 ];
 
-/* ======================================
-   NAVIGATION
-====================================== */
+const pageTitles = {
+  "home": "Home",
+  "team-charter": "Agile Team Charter",
+  "user-stories": "User Stories and Tasks",
+  "product-backlog": "Product Backlog",
+  "sprint-backlog": "Sprint Backlog",
+  "agile-logbook": "Agile Logbook"
+};
+
+/* =========================================
+   PAGE NAVIGATION
+========================================= */
 
 function showPage() {
 
-  const hash = window.location.hash.slice(1);
+  const requested = location.hash.slice(1);
 
-  // Default to Home if the section is invalid
-  const currentPage = pageIds.includes(hash)
-    ? hash
+  const selected = pages.includes(requested)
+    ? requested
     : "home";
 
-  // Show the selected section
-  document.querySelectorAll(".page-section")
-    .forEach(section => {
+  // Show selected page
+  document.querySelectorAll(".page").forEach(page => {
+    page.classList.toggle(
+      "active",
+      page.id === selected
+    );
+  });
 
-      if (section.id === currentPage) {
-        section.classList.add("active");
-      } else {
-        section.classList.remove("active");
-      }
+  // Highlight active navigation link
+  document.querySelectorAll(".nav-link").forEach(link => {
+    const isActive =
+      link.getAttribute("href") === "#" + selected;
 
-    });
+    link.classList.toggle("active", isActive);
 
-  // Highlight the active navigation link
-  document.querySelectorAll(".nav-link")
-    .forEach(link => {
+    if (isActive) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
 
-      const target = link.getAttribute("href");
-
-      if (target === "#" + currentPage) {
-        link.classList.add("active");
-        link.setAttribute("aria-current", "page");
-      } else {
-        link.classList.remove("active");
-        link.removeAttribute("aria-current");
-      }
-
-    });
-
-  // Update title
-  const titles = {
-    home: "Home",
-    "team-charter": "Agile Team Charter",
-    "user-stories": "User Stories and Tasks",
-    "product-backlog": "Product Backlog",
-    "sprint-backlog": "Sprint Backlog",
-    "agile-logbook": "Agile Logbook"
-  };
-
+  // Change the browser tab title
   document.title =
-    titles[currentPage] + " | Book Swap SA";
+    pageTitles[selected] + " | Book Swap SA";
 
-  // Scroll to top of the new page
+  // Return to top of selected page
   window.scrollTo(0, 0);
 }
 
-/* ======================================
-   CLICKABLE LINKS
-====================================== */
+/* =========================================
+   ORIGINAL TRELLO SCREENSHOTS
+========================================= */
 
-function setupNavigation() {
+// One original source folder.
+// Different portfolio sections reuse
+// selected images from this same folder.
 
-  document.querySelectorAll('a[href^="#"]')
-    .forEach(link => {
+const trelloFolder = "evidence/product-backlog/";
 
-      link.addEventListener("click", event => {
+const allTrelloScreenshots = Array.from(
+  { length: 19 },
+  (_, i) => `product-backlog-${i + 1}.jpeg`
+);
 
-        const targetId =
-          link.getAttribute("href").slice(1);
+/* =========================================
+   USER STORIES EVIDENCE
+========================================= */
 
-        // Only handle valid portfolio links
-        if (!pageIds.includes(targetId)) {
-          return;
-        }
+// Selected screenshots from the original board.
+// These show requirements-related activities,
+// user stories, interface planning and development.
 
-        event.preventDefault();
+const userStoryEvidence = [
+  {
+    file: "product-backlog-7.jpeg",
+    caption:
+      "Sprint 3: Requirements and User Story Planning",
+    explanation:
+      "Shows the Create User Stories task and nearby system analysis activities."
+  },
+  {
+    file: "product-backlog-8.jpeg",
+    caption:
+      "Sprint 3: Database and System Design",
+    explanation:
+      "Shows supporting tasks associated with planning the system."
+  },
+  {
+    file: "product-backlog-10.jpeg",
+    caption:
+      "Sprint 4: Textbook Listings and Search Interface",
+    explanation:
+      "Shows interface design tasks related to the planned textbook features."
+  },
+  {
+    file: "product-backlog-13.jpeg",
+    caption:
+      "Sprint 5: Textbook Listings and Search Functionality",
+    explanation:
+      "Shows development cards including Day 37: Search and Filter Functionality."
+  }
+];
 
-        // If already on the selected page,
-        // reload that page's view
-        if (window.location.hash === "#" + targetId) {
-          showPage();
-        } else {
-          window.location.hash = targetId;
-        }
+/* =========================================
+   SPRINT BACKLOG EVIDENCE
+========================================= */
 
-      });
+// The same Trello board provides
+// evidence of planned sprint activities.
 
-    });
+const sprintEvidence = [
+  {
+    file: "product-backlog-1.jpeg",
+    caption:
+      "Sprint 1: Project Initiation",
+    explanation:
+      "Shows early planning tasks, including problem statement and stakeholders."
+  },
+  {
+    file: "product-backlog-4.jpeg",
+    caption:
+      "Sprint 2: Business Planning",
+    explanation:
+      "Shows planned business goals, business model and marketing activities."
+  },
+  {
+    file: "product-backlog-7.jpeg",
+    caption:
+      "Sprint 3: System Analysis",
+    explanation:
+      "Shows requirements and user story planning."
+  },
+  {
+    file: "product-backlog-10.jpeg",
+    caption:
+      "Sprint 4: UI/UX Design",
+    explanation:
+      "Shows prototype and interface design tasks."
+  },
+  {
+    file: "product-backlog-13.jpeg",
+    caption:
+      "Sprint 5: Core Development",
+    explanation:
+      "Shows textbook listing, search and filtering development tasks."
+  },
+  {
+    file: "product-backlog-15.jpeg",
+    caption:
+      "Sprint 6: Testing and Quality Assurance",
+    explanation:
+      "Shows testing activities including registration, login and textbook listings."
+  },
+  {
+    file: "product-backlog-18.jpeg",
+    caption:
+      "Sprint 7: Project Finalisation",
+    explanation:
+      "Shows user manual, system review and final presentation tasks."
+  }
+];
 
-  // Support browser Back and Forward buttons
-  window.addEventListener("hashchange", showPage);
-}
+/* =========================================
+   AGILE LOGBOOK SCREENSHOTS
+========================================= */
 
-/* ======================================
-   EVIDENCE SCREENSHOT FILENAMES
-====================================== */
+const logbookFolder = "evidence/agile-logbook/";
 
-const evidenceFiles = {
+const logbookEvidence = [
+  "01_July_14-17_Logbook_Tuesday.jpeg",
+  "02_July_14-17_Logbook_Wednesday_Thrursday.jpeg",
+  "03_July_14-17_Logbook_Friday.jpeg",
+  "04_July_20-24_Logbook_Monday_Tuesday.jpeg",
+  "05_July_20-24_Logbook_Wednesday_Thursday.jpeg",
+  "06_July_20-24_Logbook_Friday.jpeg",
+  "07_August_10-14_Logbook_Monday_Tuesday_Wednesday.jpeg",
+  "08_August_10-14_Logbook_Thursday_Friday.jpeg"
+];
 
-  // Add actual user story screenshots here
-  "user-stories": [],
+/* =========================================
+   CREATE IMAGE GALLERY
+========================================= */
 
-  // Existing 19 Product Backlog screenshots
-  "product-backlog": Array.from(
-    { length: 19 },
-    (_, i) => "product-backlog-" + (i + 1) + ".jpeg"
-  ),
-
-  // Add actual Sprint Backlog screenshots here
-  "sprint-backlog": [],
-
-  // Existing 8 Agile Logbook screenshots
-  "agile-logbook": [
-    "01_July_14-17_Logbook_Tuesday.jpeg",
-    "02_July_14-17_Logbook_Wednesday_Thrursday.jpeg",
-    "03_July_14-17_Logbook_Friday.jpeg",
-    "04_July_20-24_Logbook_Monday_Tuesday.jpeg",
-    "05_July_20-24_Logbook_Wednesday_Thursday.jpeg",
-    "06_July_20-24_Logbook_Friday.jpeg",
-    "07_August_10-14_Logbook_Monday_Tuesday_Wednesday.jpeg",
-    "08_August_10-14_Logbook_Thursday_Friday.jpeg"
-  ]
-};
-
-/* ======================================
-   CREATE IMAGE GALLERIES
-====================================== */
-
-function createGallery(elementId, folderName, files) {
+function createGallery(
+  elementId,
+  folder,
+  items
+) {
 
   const gallery = document.getElementById(elementId);
 
-  if (!gallery) {
-    return;
-  }
+  if (!gallery) return;
 
-  gallery.innerHTML = "";
+  gallery.replaceChildren();
 
-  // Show message when no evidence exists
-  if (files.length === 0) {
-
+  if (items.length === 0) {
     const message = document.createElement("p");
 
     message.className = "gallery-message";
-
     message.textContent =
-      "Supporting screenshots have not yet been added " +
-      "to this section. Upload original project evidence " +
-      "to display it here.";
+      "Original supporting evidence is not available.";
 
     gallery.appendChild(message);
-
     return;
   }
 
-  files.forEach((fileName, index) => {
+  items.forEach((item, index) => {
+
+    // Accept either a filename or an
+    // object containing file and caption.
+    const fileName =
+      typeof item === "string"
+        ? item
+        : item.file;
+
+    const captionText =
+      typeof item === "string"
+        ? fileName
+            .replace(/\.[^.]+$/, "")
+            .replace(/_/g, " ")
+        : item.caption;
+
+    const explanation =
+      typeof item === "string"
+        ? ""
+        : item.explanation || "";
 
     const imagePath =
-      "evidence/" +
-      folderName +
-      "/" +
-      encodeURIComponent(fileName);
+      folder + encodeURIComponent(fileName);
 
-    // Figure
+    // Figure container
     const figure = document.createElement("figure");
 
-    // Link to original full-size image
+    // Full-size image link
     const link = document.createElement("a");
-
     link.href = imagePath;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
 
-    // Image element
-    const img = document.createElement("img");
+    // Image
+    const image = document.createElement("img");
+    image.src = imagePath;
+    image.loading = "lazy";
+    image.alt = captionText;
 
-    img.src = imagePath;
-    img.loading = "lazy";
-
-    img.alt =
-      folderName.replace(/-/g, " ") +
-      " screenshot " +
-      (index + 1);
-
-    // Image caption
+    // Caption
     const caption = document.createElement("figcaption");
 
-    const readableName = fileName
-      .replace(/\.[^.]+$/, "")
-      .replace(/_/g, " ");
+    const heading = document.createElement("strong");
+    heading.textContent =
+      `Figure ${index + 1}: ${captionText}`;
 
-    caption.textContent =
-      "Figure " +
-      (index + 1) +
-      ": " +
-      readableName;
+    caption.appendChild(heading);
 
-    // Missing file message
-    img.addEventListener("error", () => {
+    if (explanation) {
+      const detail = document.createElement("p");
+      detail.textContent = explanation;
+      caption.appendChild(detail);
+    }
 
-      figure.innerHTML = "";
-
-      const error = document.createElement("p");
-
-      error.className = "gallery-message";
-
-      error.textContent =
-        "Image not found: " +
-        fileName +
-        ". Please check its folder and filename.";
-
-      figure.appendChild(error);
+    // Missing image handling
+    image.addEventListener("error", () => {
+      figure.replaceChildren();
+      figure.classList.add("gallery-message");
+      figure.textContent =
+        "Could not load " + fileName +
+        ". Check the filename and folder.";
     });
 
-    // Assemble the image card
-    link.appendChild(img);
-
-    figure.appendChild(link);
-    figure.appendChild(caption);
+    // Assemble image card
+    link.appendChild(image);
+    figure.append(link, caption);
 
     gallery.appendChild(figure);
-
   });
 }
 
-/* ======================================
-   LOAD SCREENSHOT GALLERIES
-====================================== */
+/* =========================================
+   LOAD ALL EVIDENCE GALLERIES
+========================================= */
 
 function loadGalleries() {
 
+  // User Stories: selected original Trello images
   createGallery(
     "user-stories-gallery",
-    "user-stories",
-    evidenceFiles["user-stories"]
+    trelloFolder,
+    userStoryEvidence
   );
 
+  // Product Backlog: all 19 Trello images
   createGallery(
     "product-gallery",
-    "product-backlog",
-    evidenceFiles["product-backlog"]
+    trelloFolder,
+    allTrelloScreenshots
   );
 
+  // Sprint Backlog: seven sprint examples
   createGallery(
     "sprint-gallery",
-    "sprint-backlog",
-    evidenceFiles["sprint-backlog"]
+    trelloFolder,
+    sprintEvidence
   );
 
+  // Agile Logbook: eight dated records
   createGallery(
     "logbook-gallery",
-    "agile-logbook",
-    evidenceFiles["agile-logbook"]
+    logbookFolder,
+    logbookEvidence
   );
 }
 
-/* ======================================
+/* =========================================
    INITIALISE WEBSITE
-====================================== */
+========================================= */
 
-document.addEventListener("DOMContentLoaded", () => {
+function startWebsite() {
 
-  // Enable individual page navigation
-  document.body.classList.add("js-ready");
-
-  // Make all navigation links work
-  setupNavigation();
-
-  // Display selected page
-  showPage();
-
-  // Display evidence screenshots
+  // Display screenshot evidence
   loadGalleries();
 
-});
+  // Enable one-page-at-a-time navigation
+  document.documentElement.classList.add("js-enabled");
+
+  // Open Home or the selected page
+  showPage();
+
+  // Navigation changes
+  window.addEventListener("hashchange", showPage);
+
+  // Handle clicking the current page's link
+  document.addEventListener("click", event => {
+
+    const link = event.target.closest('a[href^="#"]');
+
+    if (!link) return;
+
+    const target = link.getAttribute("href");
+
+    if (
+      pages.includes(target.slice(1)) &&
+      target === location.hash
+    ) {
+      showPage();
+    }
+  });
+}
+
+// Start once HTML is loaded
+if (document.readyState === "loading") {
+  document.addEventListener(
+    "DOMContentLoaded",
+    startWebsite
+  );
+} else {
+  startWebsite();
+}
