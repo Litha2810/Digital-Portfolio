@@ -1,11 +1,10 @@
 
-/* =====================================
-   BOOK SWAP SA AGILE PORTFOLIO
-   NAVIGATION AND EVIDENCE GALLERIES
-===================================== */
+/* ======================================
+   BOOK SWAP SA AGILE DIGITAL PORTFOLIO
+   COMPLETE JAVASCRIPT
+====================================== */
 
-// All portfolio sections
-
+// Portfolio section IDs
 const pageIds = [
   "home",
   "team-charter",
@@ -15,59 +14,50 @@ const pageIds = [
   "agile-logbook"
 ];
 
-/* =====================================
-   PAGE NAVIGATION
-===================================== */
+/* ======================================
+   NAVIGATION
+====================================== */
 
 function showPage() {
 
-  const requestedPage =
-    window.location.hash.replace("#", "");
+  const hash = window.location.hash.slice(1);
 
-  // Open Home for missing or invalid section names
-  const currentPage = pageIds.includes(requestedPage)
-    ? requestedPage
+  // Default to Home if the section is invalid
+  const currentPage = pageIds.includes(hash)
+    ? hash
     : "home";
 
   // Show the selected section
   document.querySelectorAll(".page-section")
     .forEach(section => {
 
-      section.classList.toggle(
-        "active",
-        section.id === currentPage
-      );
+      if (section.id === currentPage) {
+        section.classList.add("active");
+      } else {
+        section.classList.remove("active");
+      }
 
     });
 
-  // Highlight the selected navigation link
+  // Highlight the active navigation link
   document.querySelectorAll(".nav-link")
     .forEach(link => {
 
-      const linkPage =
-        link.getAttribute("href").replace("#", "");
+      const target = link.getAttribute("href");
 
-      const isActive = linkPage === currentPage;
-
-      link.classList.toggle("active", isActive);
-
-      if (isActive) {
+      if (target === "#" + currentPage) {
+        link.classList.add("active");
         link.setAttribute("aria-current", "page");
       } else {
+        link.classList.remove("active");
         link.removeAttribute("aria-current");
       }
 
     });
 
-  // Move back to top when opening a section
-  window.scrollTo({
-    top: 0,
-    behavior: "instant"
-  });
-
-  // Update the browser title
+  // Update title
   const titles = {
-    "home": "Home",
+    home: "Home",
     "team-charter": "Agile Team Charter",
     "user-stories": "User Stories and Tasks",
     "product-backlog": "Product Backlog",
@@ -76,30 +66,68 @@ function showPage() {
   };
 
   document.title =
-    `${titles[currentPage]} | Book Swap SA`;
+    titles[currentPage] + " | Book Swap SA";
+
+  // Scroll to top of the new page
+  window.scrollTo(0, 0);
 }
 
-// Navigate using the browser hash
-window.addEventListener("hashchange", showPage);
+/* ======================================
+   CLICKABLE LINKS
+====================================== */
 
-/* =====================================
-   EVIDENCE FILES
-===================================== */
+function setupNavigation() {
 
-// Files verified in the uploaded portfolio ZIP.
-// Add new files to the empty arrays when uploaded.
+  document.querySelectorAll('a[href^="#"]')
+    .forEach(link => {
+
+      link.addEventListener("click", event => {
+
+        const targetId =
+          link.getAttribute("href").slice(1);
+
+        // Only handle valid portfolio links
+        if (!pageIds.includes(targetId)) {
+          return;
+        }
+
+        event.preventDefault();
+
+        // If already on the selected page,
+        // reload that page's view
+        if (window.location.hash === "#" + targetId) {
+          showPage();
+        } else {
+          window.location.hash = targetId;
+        }
+
+      });
+
+    });
+
+  // Support browser Back and Forward buttons
+  window.addEventListener("hashchange", showPage);
+}
+
+/* ======================================
+   EVIDENCE SCREENSHOT FILENAMES
+====================================== */
 
 const evidenceFiles = {
 
+  // Add actual user story screenshots here
   "user-stories": [],
 
+  // Existing 19 Product Backlog screenshots
   "product-backlog": Array.from(
     { length: 19 },
-    (_, index) => `product-backlog-${index + 1}.jpeg`
+    (_, i) => "product-backlog-" + (i + 1) + ".jpeg"
   ),
 
+  // Add actual Sprint Backlog screenshots here
   "sprint-backlog": [],
 
+  // Existing 8 Agile Logbook screenshots
   "agile-logbook": [
     "01_July_14-17_Logbook_Tuesday.jpeg",
     "02_July_14-17_Logbook_Wednesday_Thrursday.jpeg",
@@ -110,45 +138,23 @@ const evidenceFiles = {
     "07_August_10-14_Logbook_Monday_Tuesday_Wednesday.jpeg",
     "08_August_10-14_Logbook_Thursday_Friday.jpeg"
   ]
-
 };
 
-/* =====================================
-   GALLERY CAPTIONS
-===================================== */
+/* ======================================
+   CREATE IMAGE GALLERIES
+====================================== */
 
-const galleryCaptions = {
+function createGallery(elementId, folderName, files) {
 
-  "product-backlog":
-    "Product Backlog Trello Evidence",
-
-  "agile-logbook":
-    "Original Agile Logbook Record",
-
-  "user-stories":
-    "User Stories and Tasks Evidence",
-
-  "sprint-backlog":
-    "Sprint Backlog Evidence"
-
-};
-
-/* =====================================
-   IMAGE GALLERY FUNCTION
-===================================== */
-
-function createGallery(galleryId, folderName, files) {
-
-  const gallery = document.getElementById(galleryId);
+  const gallery = document.getElementById(elementId);
 
   if (!gallery) {
     return;
   }
 
-  // Avoid adding the same images twice
   gallery.innerHTML = "";
 
-  // Show a message when screenshots haven't been added
+  // Show message when no evidence exists
   if (files.length === 0) {
 
     const message = document.createElement("p");
@@ -157,68 +163,75 @@ function createGallery(galleryId, folderName, files) {
 
     message.textContent =
       "Supporting screenshots have not yet been added " +
-      "to this section. Original project evidence " +
-      "will be displayed here once uploaded.";
+      "to this section. Upload original project evidence " +
+      "to display it here.";
 
     gallery.appendChild(message);
 
     return;
   }
 
-  // Display each screenshot
   files.forEach((fileName, index) => {
 
     const imagePath =
-      `evidence/${folderName}/` +
+      "evidence/" +
+      folderName +
+      "/" +
       encodeURIComponent(fileName);
 
-    // Figure container
+    // Figure
     const figure = document.createElement("figure");
 
-    // Full-size image link
+    // Link to original full-size image
     const link = document.createElement("a");
 
     link.href = imagePath;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
 
-    // Image
-    const image = document.createElement("img");
+    // Image element
+    const img = document.createElement("img");
 
-    image.src = imagePath;
-    image.loading = "lazy";
-    image.decoding = "async";
+    img.src = imagePath;
+    img.loading = "lazy";
 
-    image.alt =
-      `${galleryCaptions[folderName]}, ` +
-      `screenshot ${index + 1}`;
+    img.alt =
+      folderName.replace(/-/g, " ") +
+      " screenshot " +
+      (index + 1);
 
-    // Caption
+    // Image caption
     const caption = document.createElement("figcaption");
 
-    caption.textContent =
-      `Figure ${index + 1}: ` +
-      galleryCaptions[folderName];
+    const readableName = fileName
+      .replace(/\.[^.]+$/, "")
+      .replace(/_/g, " ");
 
-    // Show a useful message for a missing image
-    image.addEventListener("error", () => {
+    caption.textContent =
+      "Figure " +
+      (index + 1) +
+      ": " +
+      readableName;
+
+    // Missing file message
+    img.addEventListener("error", () => {
 
       figure.innerHTML = "";
 
-      const errorMessage = document.createElement("p");
+      const error = document.createElement("p");
 
-      errorMessage.className = "gallery-message";
+      error.className = "gallery-message";
 
-      errorMessage.textContent =
-        `Could not load: ${fileName}. ` +
-        "Check the image filename and folder.";
+      error.textContent =
+        "Image not found: " +
+        fileName +
+        ". Please check its folder and filename.";
 
-      figure.appendChild(errorMessage);
-
+      figure.appendChild(error);
     });
 
-    // Assemble figure
-    link.appendChild(image);
+    // Assemble the image card
+    link.appendChild(img);
 
     figure.appendChild(link);
     figure.appendChild(caption);
@@ -226,12 +239,11 @@ function createGallery(galleryId, folderName, files) {
     gallery.appendChild(figure);
 
   });
-
 }
 
-/* =====================================
-   LOAD THE GALLERIES
-===================================== */
+/* ======================================
+   LOAD SCREENSHOT GALLERIES
+====================================== */
 
 function loadGalleries() {
 
@@ -258,17 +270,24 @@ function loadGalleries() {
     "agile-logbook",
     evidenceFiles["agile-logbook"]
   );
-
 }
 
-/* =====================================
-   START THE WEBSITE
-===================================== */
+/* ======================================
+   INITIALISE WEBSITE
+====================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
 
+  // Enable individual page navigation
+  document.body.classList.add("js-ready");
+
+  // Make all navigation links work
+  setupNavigation();
+
+  // Display selected page
   showPage();
 
+  // Display evidence screenshots
   loadGalleries();
 
 });
