@@ -5,7 +5,6 @@
   --green: #39836c;
   --sage: #eaf3e9;
   --cream: #f5f6f0;
-  --white: #ffffff;
   --text: #29403b;
   --muted: #566e65;
   --border: #d7e7da;
@@ -21,10 +20,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--cream);
-  color: var(--text);
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.75;
+  background: var(--cream);
+  color: var(--text);
 }
 
 a {
@@ -32,35 +31,30 @@ a {
 }
 
 a:focus-visible {
-  outline: 3px solid #80b99b;
+  outline: 3px solid #84b99c;
   outline-offset: 3px;
 }
 
 /* HEADER */
 
 .hero {
-  background: linear-gradient(
-    125deg,
-    #123e3a,
-    #256b5d
-  );
-
+  background: linear-gradient(120deg, #123e3a, #256b5d);
   color: white;
   text-align: center;
-  padding: 65px 20px;
+  padding: 60px 18px;
 }
 
 .eyebrow {
   color: #d1ead0;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 2px;
 }
 
 .hero h1 {
-  font-size: clamp(48px, 8vw, 85px);
-  line-height: 1.1;
-  margin: 15px 0;
+  font-size: clamp(48px, 8vw, 84px);
+  line-height: 1.15;
+  margin: 14px 0;
 }
 
 .hero h1 span {
@@ -71,9 +65,10 @@ a:focus-visible {
   font-size: 21px;
 }
 
-.hero strong {
-  display: block;
+.student {
   font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 /* NAVIGATION */
@@ -97,6 +92,7 @@ a:focus-visible {
 }
 
 .nav-link {
+  display: inline-block;
   color: white;
   text-decoration: none;
   padding: 8px 12px;
@@ -111,7 +107,7 @@ a:focus-visible {
   background: var(--green);
 }
 
-/* PAGE LAYOUT */
+/* MAIN CONTENT */
 
 .container {
   max-width: 1100px;
@@ -119,19 +115,42 @@ a:focus-visible {
   padding: 0 18px;
 }
 
+/* =======================================
+   IMPORTANT: SEPARATE PAGE NAVIGATION
+======================================= */
+
+/* Hide all pages initially */
 .page {
+  display: none;
   scroll-margin-top: 110px;
 }
 
-/* Only hide pages if JavaScript is working */
+/* Display Home by default */
+#home {
+  display: block;
+}
 
-html.js-enabled .page {
+/* Hide Home if another page is selected */
+.container:has(.page:target) #home:not(:target) {
   display: none;
 }
 
-html.js-enabled .page.active {
+/* Display only the selected section */
+.container .page:target {
   display: block;
 }
+
+/*
+  This works with the links in index.html:
+  #home
+  #team-charter
+  #user-stories
+  #product-backlog
+  #sprint-backlog
+  #agile-logbook
+*/
+
+/* CONTENT CARD */
 
 .panel {
   background: white;
@@ -177,7 +196,7 @@ li {
   margin: 6px 0;
 }
 
-/* METADATA */
+/* SECTION INFORMATION */
 
 .metadata {
   background: #f4f9f3;
@@ -187,7 +206,7 @@ li {
   margin: 20px 0;
 }
 
-/* HOMEPAGE STATISTICS */
+/* HOMEPAGE STATS */
 
 .stats {
   display: grid;
@@ -200,7 +219,7 @@ li {
   background: var(--sage);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 19px 12px;
+  padding: 20px 12px;
   text-align: center;
 }
 
@@ -211,11 +230,12 @@ li {
 }
 
 .stats span {
+  display: block;
   color: var(--muted);
   font-size: 13px;
 }
 
-/* HOMEPAGE CARDS */
+/* HOMEPAGE SUMMARY CARDS */
 
 .card-grid {
   display: grid;
@@ -238,7 +258,7 @@ li {
   transform: translateY(-4px);
 }
 
-.card-number {
+.number {
   color: var(--green);
   font-size: 13px;
   font-weight: 800;
@@ -249,7 +269,7 @@ li {
   margin-top: auto;
   padding-top: 15px;
   color: var(--teal);
-  font-weight: 700;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -266,7 +286,7 @@ li {
 
 table {
   width: 100%;
-  min-width: 550px;
+  min-width: 520px;
   border-collapse: collapse;
 }
 
@@ -287,7 +307,7 @@ tbody tr:nth-child(even) {
   background: #f3f8f2;
 }
 
-/* STORIES AND SPRINTS */
+/* USER STORIES AND SPRINTS */
 
 .story,
 .sprint {
@@ -303,7 +323,7 @@ tbody tr:nth-child(even) {
   margin-bottom: 0;
 }
 
-/* REFLECTIONS */
+/* PERSONAL REFLECTIONS */
 
 .reflection {
   background: var(--sage);
@@ -321,17 +341,7 @@ tbody tr:nth-child(even) {
   margin-bottom: 0;
 }
 
-/* EVIDENCE EXPLANATIONS */
-
-.evidence-note {
-  background: #f2f7f1;
-  border-left: 4px solid #579481;
-  padding: 14px 18px;
-  border-radius: 0 9px 9px 0;
-  color: var(--muted);
-}
-
-/* SCREENSHOT GALLERIES */
+/* EVIDENCE GALLERIES */
 
 .gallery {
   display: grid;
@@ -389,7 +399,7 @@ tbody tr:nth-child(even) {
   padding: 12px 19px;
   margin: 15px 0;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -430,9 +440,10 @@ tbody tr:nth-child(even) {
   text-decoration: none;
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVENESS */
 
 @media (max-width: 700px) {
+
   .hero {
     padding: 45px 15px;
   }
@@ -459,10 +470,7 @@ tbody tr:nth-child(even) {
     padding: 23px 19px;
   }
 
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
+  .card-grid,
   .gallery {
     grid-template-columns: 1fr;
   }
