@@ -1,299 +1,430 @@
 
 # Book Swap SA — Agile Digital Portfolio
 
-**Second-Hand Textbook Swap | PRP372S — Project Presentation 3**  
+### Second-Hand Textbook Swap
+
 **Cape Peninsula University of Technology (CPUT)**  
+**Module:** Project Presentation 3 (PRP372S)  
+**Academic Year:** 2026  
 **Student:** Litha Owethu Mazibuko  
-**Role:** Project Facilitator / Scrum Master
+**Assigned Role:** Project Facilitator / Scrum Master
 
-### 🌐 View My Portfolio
+---
 
-**[Open the Book Swap SA Agile Portfolio Website](https://litha2810.github.io/Digital-Portfolio/)**
+### 🌐 My Digital Portfolio and GitHub Repository
 
-[GitHub Repository](https://github.com/Litha2810/Digital-Portfolio) | [Project Trello Board](https://trello.com/b/zw19sdMT)
+**[View My Live Agile Digital Portfolio](https://litha2810.github.io/Digital-Portfolio/)**
+
+**[View My Complete GitHub Repository](https://github.com/Litha2810/Digital-Portfolio)**
+
+**[View Our Book Swap SA Trello Board](https://trello.com/b/zw19sdMT)**
+
+The GitHub repository provides access to the portfolio source code, README, Agile evidence screenshots and supporting project documents.
 
 ---
 
 ## Table of Contents
 
-- [Project Overview](#project-overview)
-- [My Role and Contribution](#my-role-and-contribution)
-- [Portfolio Assessment Map](#portfolio-assessment-map)
-- [1. Agile Team Charter](#1-agile-team-charter)
-- [2. User Stories and Tasks](#2-user-stories-and-tasks)
-- [3. Product Backlog](#3-product-backlog)
-- [4. Sprint Backlog](#4-sprint-backlog)
-- [5. Agile Logbook](#5-agile-logbook)
-- [Project Documentation](#project-documentation)
-- [How the Artefacts Connect](#how-the-artefacts-connect)
-- [Evidence and Referencing Notes](#evidence-and-referencing-notes)
+1. [Project Overview](#project-overview)
+2. [My Role and Responsibilities](#my-role-and-responsibilities)
+3. [Project Team](#project-team)
+4. [Assessment Rubric Alignment](#assessment-rubric-alignment)
+5. [Agile Portfolio of Evidence](#agile-portfolio-of-evidence)
+   - [1. Agile Team Charter](#1-agile-team-charter)
+   - [2. User Stories and Tasks](#2-user-stories-and-tasks)
+   - [3. Product Backlog](#3-product-backlog)
+   - [4. Sprint Backlog](#4-sprint-backlog)
+   - [5. Agile Logbook](#5-agile-logbook)
+6. [Supporting Project Documentation](#supporting-project-documentation)
+7. [How the Agile Artefacts Connect](#how-the-agile-artefacts-connect)
+8. [Overall Personal Reflection](#overall-personal-reflection)
+9. [Evidence and References](#evidence-and-references)
+10. [Portfolio Submission Links](#portfolio-submission-links)
 
 ---
 
 ## Project Overview
 
-Book Swap SA is a student-focused project intended to help CPUT students **find, buy, sell and exchange affordable second-hand textbooks**.
+### Introduction
 
-The project addresses the high cost of academic learning materials and encourages the sustainable reuse of textbooks.
+Book Swap SA is a student-focused initiative developed to address the challenges associated with accessing affordable academic textbooks.
 
-The primary project objectives include:
+Students frequently face financial difficulties when purchasing prescribed learning materials. Textbooks may also become unused after a semester or academic year, even though other students still require them.
 
-- Improving access to affordable second-hand textbooks.
+Book Swap SA was conceptualised as a platform where students could discover, buy, sell and exchange affordable second-hand textbooks.
+
+The project promotes the reuse of academic resources while encouraging a more accessible and sustainable student marketplace.
+
+### Project Problem Statement
+
+The high cost of academic textbooks can create financial pressure for students.
+
+At the same time, students who have completed their modules may own textbooks that are no longer needed.
+
+Without an organised platform for connecting buyers and sellers, students may experience difficulty finding suitable second-hand textbooks.
+
+Book Swap SA aims to address this problem by providing a student-centred solution for textbook discovery and exchange.
+
+### Project Objectives
+
+The main objectives of Book Swap SA include:
+
+- Providing students with access to affordable second-hand textbooks.
 - Supporting textbook discovery through searching and filtering.
-- Providing a user-friendly and responsive platform.
+- Creating a user-friendly and responsive platform.
 - Encouraging the reuse of academic resources.
-- Supporting student collaboration.
+- Supporting communication and collaboration between students.
+- Applying Agile project management practices during project planning and development.
 
-This individual Agile Digital Portfolio presents evidence from our team's planning and project activities.
+These objectives describe the intended project outcomes. The available Agile evidence documents planning and project activities rather than independently proving that every proposed feature was implemented.
 
-It also documents my personal learning and development as the **Project Facilitator / Scrum Master**.
+### Project Management Approach
 
-The portfolio contains five required Agile artefacts:
+Our team applied Agile project management principles to organise project activities into smaller, manageable stages.
 
-1. Agile Team Charter
-2. User Stories and Tasks
-3. Product Backlog
-4. Sprint Backlog
-5. Agile Logbook
+The project was planned around **seven sprints**, with Trello used to organise **54 day-based task cards**.
 
-Each section includes supporting evidence and a personal reflection using the **STAR Method (Situation, Task, Action, Result and Learning)**.
+The seven planned sprints covered:
 
-Our team used Trello to organise **54 day-based task cards across seven planned sprints**.
+1. Project Initiation and Business Planning.
+2. Business Plan Development.
+3. System Analysis and Design.
+4. UI/UX Design and Prototype Development.
+5. Core System Development.
+6. Testing and Quality Assurance.
+7. Project Finalisation and Submission.
 
-The original Trello board, Team Charter, screenshots and dated Agile Logbook records are retained as supporting evidence.
-
-The evidence demonstrates recorded plans and project activities. A task appearing on Trello does not automatically mean that it was completed.
+The Agile approach supported task organisation, communication, progress visibility and opportunities for continuous improvement.
 
 ---
 
-## My Role and Contribution
+## My Role and Responsibilities
+
+### Project Facilitator / Scrum Master
 
 My assigned role in Book Swap SA was **Project Facilitator / Scrum Master**.
 
-According to our original Agile Team Charter, my responsibilities included:
+This role focused on supporting the Agile process, promoting communication and encouraging effective collaboration between team members.
 
-- Facilitating Agile stand-ups and progress discussions.
-- Supporting effective communication between team members.
+According to our original Agile Team Charter, the responsibilities associated with my role included:
+
+- Facilitating Agile stand-ups and project progress discussions.
+- Supporting communication between team members.
 - Encouraging adherence to Agile working practices.
 - Monitoring sprint progress through the Agile Logbook.
-- Promoting teamwork and accountability.
-- Supporting visibility of planned and outstanding activities.
-- Encouraging constructive discussions about project challenges.
+- Supporting accountability and task visibility.
+- Encouraging constructive discussions about challenges.
+- Promoting collaboration and continuous improvement.
 
-As Scrum Master / Project Facilitator, my focus was on supporting the Agile process and team coordination rather than independently developing every technical feature.
+### My Contribution to the Agile Portfolio
 
-### Team Members and Assigned Roles
+My individual portfolio demonstrates my understanding of these responsibilities through the analysis and reflection of the team's original project evidence.
 
-| Team Member | Assigned Role |
-|---|---|
-| Litha Owethu Mazibuko | Project Facilitator / Scrum Master |
-| Samkelo Mahlangu | Product Owner / Content Lead |
-| Coben Maistry | Frontend Developer |
-| Angelia Van der Westhuizen | UI/UX and Quality Assurance Lead |
-| Ongeziwe Raqa | Deployment and Documentation Lead |
+I reviewed the Team Charter, user story records, Product Backlog, sprint-related Trello cards and Agile Logbook entries.
 
-These responsibilities are documented in the original Agile Team Charter.
+Through this process, I developed a clearer understanding of how Agile artefacts support team coordination, project planning and progress monitoring.
+
+My assigned role was different from the responsibilities of the Product Owner, Frontend Developer, UI/UX Lead and Documentation Lead.
+
+I therefore distinguish between:
+
+- My assigned Scrum Master responsibilities.
+- Activities documented in our team artefacts.
+- My personal analysis and learning.
+- Planned project tasks that are not independently verified as completed.
+
+This distinction helps ensure that my portfolio accurately represents my contribution and the available evidence.
 
 ---
 
-## Portfolio Assessment Map
+## Project Team
 
-The PRP372S assessment allocates **10 marks for Evidence and 10 marks for Reflection** in each of the five required sections.
+Book Swap SA was developed as a collaborative group project involving five team members.
 
-| Agile Artefact | Evidence | Reflection | Portfolio Section |
-|---|---:|---:|---|
-| Agile Team Charter | 10 | 10 | [View Section](https://litha2810.github.io/Digital-Portfolio/#team-charter) |
-| User Stories and Tasks | 10 | 10 | [View Section](https://litha2810.github.io/Digital-Portfolio/#user-stories) |
-| Product Backlog | 10 | 10 | [View Section](https://litha2810.github.io/Digital-Portfolio/#product-backlog) |
-| Sprint Backlog | 10 | 10 | [View Section](https://litha2810.github.io/Digital-Portfolio/#sprint-backlog) |
-| Agile Logbook | 10 | 10 | [View Section](https://litha2810.github.io/Digital-Portfolio/#agile-logbook) |
-| **Total Available** | **50** | **50** | **100 Marks** |
+| Team Member | Assigned Role | Area of Responsibility |
+|---|---|---|
+| Litha Owethu Mazibuko | Project Facilitator / Scrum Master | Agile facilitation, communication and progress monitoring |
+| Samkelo Mahlangu | Product Owner / Content Lead | Product requirements, backlog priorities and content |
+| Coben Maistry | Frontend Developer | Frontend development and responsive interfaces |
+| Angelia Van der Westhuizen | UI/UX and Quality Assurance Lead | Interface design, usability and quality assurance |
+| Ongeziwe Raqa | Deployment and Documentation Lead | Deployment, repository maintenance and documentation |
 
-The portfolio follows the e-portfolio learning process:
+The team roles are supported by the original Agile Team Charter.
+
+**[View Original Team Charter](evidence/agile-team-charter.pdf)**
+
+---
+
+## Assessment Rubric Alignment
+
+This portfolio is structured around the five Agile artefacts assessed in the PRP370/371/372S October 2026 assessment.
+
+Each artefact carries:
+
+- **Evidence: 10 marks**
+- **Personal Reflection: 10 marks**
+
+### Assessment Breakdown
+
+| Assessment Component | Evidence | Reflection | Total |
+|---|---:|---:|---:|
+| Agile Team Charter | 10 | 10 | 20 |
+| User Stories and Tasks | 10 | 10 | 20 |
+| Product Backlog | 10 | 10 | 20 |
+| Sprint Backlog | 10 | 10 | 20 |
+| Agile Logbook | 10 | 10 | 20 |
+| **Total Available** | **50** | **50** | **100** |
+
+### Portfolio Development Approach
+
+The portfolio follows the learning process:
 
 **Collect → Select → Reflect → Connect**
 
+**Collect:** Gather original project documents, Trello screenshots and Agile Logbook records.
+
+**Select:** Identify evidence that demonstrates the required Agile artefacts and is relevant to my assigned role.
+
+**Reflect:** Examine the situation, my responsibilities, the actions I reviewed or undertook, and the lessons learned.
+
+**Connect:** Explain how the artefacts relate to one another and how the experience contributes to my professional development.
+
+The personal reflections use the STAR Method:
+
+- **S — Situation:** The project context or challenge.
+- **T — Task:** My assigned responsibility or objective.
+- **A — Action:** What I did or examined in relation to the evidence.
+- **R — Result and Learning:** The outcome, lessons learned and possible improvements.
+
 ---
+
+# Agile Portfolio of Evidence
 
 ## 1. Agile Team Charter
 
-### Evidence
+### 1.1 Introduction
 
-**[View the Original Agile Team Charter PDF](evidence/agile-team-charter.pdf)**
+The Agile Team Charter is a foundational document that establishes a shared understanding of the team's purpose, responsibilities, working arrangements and expectations.
 
-The Agile Team Charter establishes the team's shared purpose, roles, responsibilities, values, communication methods and development goals.
+For Book Swap SA, the charter documented how the five team members intended to collaborate throughout the project.
 
-It provides a foundation for collaboration and accountability throughout the Book Swap SA project.
+It provided guidance on communication, accountability and adherence to agreed working practices.
 
-The original document identifies:
+### 1.2 Original Evidence
 
-- The project purpose and vision.
-- Team members and assigned responsibilities.
-- Shared values and Agile principles.
+**[📄 View the Original Agile Team Charter PDF](evidence/agile-team-charter.pdf)**
+
+The original document provides evidence of:
+
+- The Book Swap SA project purpose.
+- Project objectives and intended outcomes.
+- Team membership and assigned responsibilities.
+- Shared working values.
 - Communication arrangements.
-- Project development objectives.
-- Expectations for teamwork.
+- Collaboration expectations.
+- Agreed Agile working practices.
 
-The documented communication methods include WhatsApp, virtual check-ins, weekly progress discussions and GitHub for collaboration.
+### 1.3 Evidence Selection and Analysis
 
-Trello was also used to organise tasks and support progress visibility.
+I selected the original Agile Team Charter because it directly documents my assigned role as **Project Facilitator / Scrum Master**.
 
-**Why I selected this evidence:**
+The charter establishes the responsibilities of each member and demonstrates how the team intended to organise its collaboration.
 
-I selected the original Agile Team Charter because it documents the responsibilities and working arrangements agreed upon by our team.
+The assigned Scrum Master role included supporting stand-ups, Agile practices and progress monitoring.
 
-It provides evidence of my assigned role as Project Facilitator / Scrum Master.
+This evidence is important because it provides a reference for understanding my responsibilities in relation to those of the other team members.
 
-### Personal Reflection — STAR Method
+The document establishes agreed arrangements but does not, by itself, verify that every planned meeting or activity occurred.
 
-#### Situation
+### 1.4 Personal Reflection — STAR Method
 
-Book Swap SA was a five-member group project requiring us to establish shared objectives, responsibilities and communication methods.
+#### S — Situation
 
-The Agile Team Charter documented the project's purpose, assigned roles and working expectations.
+Book Swap SA was a five-member group project involving requirements planning, interface design, development, testing and documentation.
 
-Clearly defined responsibilities were important because the project involved requirements planning, development, interface design, testing, deployment and documentation.
+Each member had different responsibilities, making clear communication and agreed working arrangements important.
 
-#### Task
+Without defined roles, the team could experience duplication of tasks, misunderstandings and difficulties coordinating project activities.
 
-As **Project Facilitator / Scrum Master**, my responsibility was to support the Agile process, facilitate stand-ups and monitor sprint progress through the logbook.
+The Agile Team Charter was used to document shared expectations and responsibilities.
 
-I needed to understand how my responsibilities related to the roles of the other team members.
+#### T — Task
 
-#### Action
+As the assigned **Project Facilitator / Scrum Master**, my responsibility was to support the Agile process, facilitate stand-ups and monitor sprint progress through the logbook.
 
-I reviewed the Team Charter's role descriptions, agreed working values and communication arrangements.
+I needed to understand how my role supported the responsibilities of the Product Owner, Frontend Developer, UI/UX Lead and Documentation Lead.
 
-I considered how these responsibilities related to project coordination, including task ownership, progress updates, blockers and planned activities.
+#### A — Action
 
-This helped me understand the importance of supporting communication while respecting the responsibilities allocated to other team members.
+I reviewed the Team Charter to understand the project's agreed responsibilities, communication arrangements and working values.
 
-The charter records the agreed process but does not independently verify that every planned meeting occurred.
+I examined the relationship between these agreements and the responsibilities associated with Agile facilitation.
 
-#### Result and Learning
+Particular attention was given to task ownership, communication, accountability, progress discussions and visibility of challenges.
 
-The Team Charter helped me understand that effective Agile leadership involves facilitating collaboration rather than controlling every team member's tasks.
+This analysis helped me understand the importance of respecting individual responsibilities while encouraging collaboration across the team.
 
-I learned that clear responsibilities and communication expectations can reduce misunderstandings and support accountability.
+#### R — Result and Learning
 
-In future projects, I would encourage regular reviews of the Team Charter and clearer documentation of decisions, blockers and follow-up actions.
+The Team Charter helped me develop a clearer understanding of the responsibilities associated with the Scrum Master role.
 
-This experience strengthened my understanding of **communication, teamwork, leadership through facilitation and accountability**.
+I learned that effective project facilitation requires clear communication, shared expectations, accountability and respect for team members' contributions.
 
-**[Read the Complete Team Charter Section](https://litha2810.github.io/Digital-Portfolio/#team-charter)**
+An important lesson was that Agile leadership focuses on supporting collaboration rather than controlling every aspect of the project.
+
+In future projects, I would encourage regular reviews of the Team Charter and better documentation of decisions, blockers and follow-up actions.
+
+This experience strengthened my understanding of **teamwork, professional communication, accountability and leadership through facilitation**.
+
+### 1.5 Connection to Other Agile Artefacts
+
+The Team Charter established the responsibilities and working arrangements that supported the organisation of user stories, backlog activities, sprint planning and project progress records.
+
+It therefore provided a foundation for the other four assessed Agile artefacts.
+
+**[🌐 View the Team Charter on My Portfolio Website](https://litha2810.github.io/Digital-Portfolio/#team-charter)**
 
 ---
 
 ## 2. User Stories and Tasks
 
-### Evidence
+### 2.1 Introduction
 
-User stories describe software requirements from the perspective of the people who will use the system.
+User stories describe software requirements from the perspective of the people who will use a system.
 
-For Book Swap SA, user stories help the team understand the needs of students searching for affordable academic textbooks.
+They help development teams understand what users need and why a particular feature is valuable.
 
-The original Trello board contains a card titled:
+For Book Swap SA, user stories were relevant to designing a platform that addresses the needs of students looking for affordable textbooks.
 
-**Sprint 5: Day 37: Develop Search and Filter Functionality**
+### 2.2 Original User Story
 
-The card records this user story:
+The original Book Swap SA Trello board includes the following card:
+
+**Sprint 5: Day 37 — Develop Search and Filter Functionality**
+
+The user story is:
 
 > As a student, I want to search and filter textbook listings so that I can quickly find books that match my academic needs.
 
-### Original Trello User Story Evidence
+This story identifies:
 
-![Sprint 5 Day 37 Search and Filter User Story](evidence/user-stories/Trello%20Story%20and%20Task%20Evidence.jpeg)
+- **User:** A student.
+- **Requirement:** Search and filter textbook listings.
+- **Purpose:** Find relevant textbooks more efficiently.
 
-*Figure 1: Original Trello card showing the search and filter user story, Sprint 5 label and assigned team members.*
+### 2.3 Original Evidence
 
-**What the evidence demonstrates:**
+![Original Sprint 5 Day 37 User Story](evidence/user-stories/Trello%20Story%20and%20Task%20Evidence.jpeg)
 
-- A user requirement was recorded from the student's perspective.
-- The requirement was associated with Sprint 5.
-- A planned development activity was identified.
-- Assigned team members were visible on the card.
-- The requirement was documented using Trello.
+*Figure 1: Original Trello screenshot documenting the Sprint 5 Day 37 search and filtering user story.*
 
-The visible screenshot does not show the complete checklist or verified acceptance criteria.
+The evidence demonstrates that:
 
-### Proposed Acceptance Criteria
+- A student-centred requirement was recorded.
+- The story was associated with Sprint 5.
+- Search and filtering were identified as planned functionality.
+- Assigned team members were visible on the Trello card.
+- Trello was used to document project requirements.
 
-The following criteria could be used to assess the expected search and filter functionality:
+### 2.4 Proposed Acceptance Criteria
+
+The following criteria could be used to assess the expected functionality:
 
 1. Students can enter a textbook title or keyword.
-2. The system displays relevant matching textbooks.
+2. The system displays relevant matching listings.
 3. Students can select available filtering options.
-4. Search results reflect the selected filters.
-5. An appropriate message appears when no results are found.
-6. Students can clear filters to view the broader list again.
+4. Search results respond to the selected filters.
+5. An appropriate message appears when no matching listings are found.
+6. Students can clear filters and return to the broader list.
 
-These criteria describe proposed expectations rather than verified completed tests.
+These are **proposed evaluation criteria**, not independently verified results from completed testing.
 
-### Development Tasks
+### 2.5 Proposed Development Tasks
 
-The requirement can be divided into:
+The user story can be divided into smaller development activities:
 
-- Creating the textbook search input.
-- Implementing search functionality.
-- Designing filtering controls.
-- Applying selected filters.
-- Displaying relevant results.
-- Testing successful and unsuccessful searches.
-- Testing the filter reset functionality.
+- Create the textbook search interface.
+- Implement keyword-based search functionality.
+- Design filtering controls.
+- Apply filters to the displayed textbook listings.
+- Display matching results.
+- Handle unsuccessful searches.
+- Test search and filter functionality.
+- Test the ability to reset filters.
 
-### Personal Reflection — STAR Method
+This task breakdown illustrates how a user requirement could be translated into manageable work.
 
-#### Situation
+### 2.6 Evidence Selection and Analysis
 
-During Sprint 5, the Book Swap SA Trello board contained a card documenting the search and filter requirement.
+I selected the Sprint 5 Day 37 Trello card because it demonstrates the relationship between a user requirement and a planned development activity.
 
-The user story focused on helping students find textbook listings that matched their academic needs.
+The story follows a user-centred structure by identifying the intended user, required functionality and expected benefit.
 
-The screenshot demonstrated that the requirement was recorded and assigned to team members.
+The evidence is relevant to Agile project management because clearly defined user stories can support backlog planning, task allocation and development discussions.
 
-#### Task
+The visible screenshot does not establish that the feature was fully implemented or that all proposed acceptance criteria were tested.
 
-As **Project Facilitator / Scrum Master**, my responsibility was to support communication, task coordination and visibility of planned project activities.
+### 2.7 Personal Reflection — STAR Method
 
-I needed to understand how student requirements related to development tasks and how these activities could be monitored.
+#### S — Situation
 
-#### Action
+During Sprint 5, the Book Swap SA Trello board included a requirement for students to search and filter textbook listings.
 
-I reviewed the wording of the recorded user story and connected the student's goal to possible development tasks.
+The purpose of this feature was to help students locate textbooks relevant to their academic needs.
 
-I considered the importance of search inputs, filtering controls, displaying results and handling unsuccessful searches.
+The requirement needed to be communicated clearly so that team members could understand the intended functionality.
 
-I also examined why acceptance criteria are necessary when evaluating whether a feature meets user requirements.
+#### T — Task
 
-This helped me distinguish between documenting a requirement and verifying its implementation.
+As **Project Facilitator / Scrum Master**, my assigned responsibility was to support communication, task coordination and progress visibility.
 
-#### Result and Learning
+I needed to understand how user stories supported development planning and how requirements could be divided into manageable tasks.
 
-I learned that effective user stories focus on the user's needs and clearly communicate the value of a feature.
+#### A — Action
 
-Acceptance criteria provide expectations against which functionality can be assessed.
+I reviewed the original Trello user story and examined the relationship between the student's goal and the proposed development activities.
 
-As Scrum Master / Project Facilitator, I recognised that clear requirements can help team members coordinate tasks and understand project priorities.
+I considered how search inputs, filtering controls, matching results and unsuccessful searches related to the expected functionality.
 
-In future projects, I would encourage collaborative user-story reviews, clear acceptance criteria and regular progress discussions.
+I also examined the role of acceptance criteria in defining what successful implementation should achieve.
 
-This experience strengthened my understanding of **requirements planning, user-centred development, coordination and Agile teamwork**.
+This helped me distinguish between a documented requirement, a planned task and a verified completed feature.
 
-**[Read the Complete User Stories and Tasks Section](https://litha2810.github.io/Digital-Portfolio/#user-stories)**
+#### R — Result and Learning
+
+I learned that user stories are most useful when they communicate a clear user need and expected benefit.
+
+Acceptance criteria provide a more specific basis for discussing, developing and evaluating functionality.
+
+The experience helped me understand why clear requirements are important for sprint planning and communication between team members.
+
+In future projects, I would encourage regular user-story refinement, explicit acceptance criteria and consistent reviews of implementation evidence.
+
+This experience strengthened my understanding of **requirements analysis, user-centred planning, task coordination and Agile communication**.
+
+### 2.8 Connection to Other Agile Artefacts
+
+The user story links student requirements to planned Product Backlog activities and Sprint 5 development work.
+
+The Team Charter establishes responsibility for project coordination, while the Sprint Backlog provides a way to organise the associated development tasks.
+
+**[🌐 View User Stories and Tasks on My Portfolio Website](https://litha2810.github.io/Digital-Portfolio/#user-stories)**
 
 ---
 
 ## 3. Product Backlog
 
-### Evidence
+### 3.1 Introduction
 
-The Product Backlog provides an organised record of planned project activities and requirements.
+The Product Backlog is an organised record of requirements, features and activities identified for a project.
 
-Our Book Swap SA team used Trello to organise **54 day-based task cards across seven planned sprints**.
+It provides visibility of planned work and helps the team understand the activities necessary to progress towards the project objectives.
 
-### Product Backlog Structure
+For Book Swap SA, Trello was used to organise **54 day-based task cards across seven planned sprints**.
 
-| Sprint | Focus |
+### 3.2 Product Backlog Structure
+
+| Sprint | Planned Focus |
 |---|---|
 | Sprint 1 | Project Initiation and Business Planning |
 | Sprint 2 | Business Plan Development |
@@ -303,360 +434,522 @@ Our Book Swap SA team used Trello to organise **54 day-based task cards across s
 | Sprint 6 | Testing and Quality Assurance |
 | Sprint 7 | Project Finalisation and Submission |
 
-### Original Product Backlog Evidence
+### 3.3 Original Evidence
 
 ![Book Swap SA Product Backlog](evidence/product-backlog/product-backlog-1.jpeg)
 
-*Figure 2: Original Trello Product Backlog evidence.*
+*Figure 2: Original Trello Product Backlog screenshot showing recorded project planning activities.*
 
-**[View the Original Trello Board](https://trello.com/b/zw19sdMT)**
+**[📋 View the Original Trello Board](https://trello.com/b/zw19sdMT)**
 
-**[View All Product Backlog Screenshots](https://litha2810.github.io/Digital-Portfolio/#product-backlog)**
+**[🖼️ View All 19 Product Backlog Screenshots](https://litha2810.github.io/Digital-Portfolio/#product-backlog)**
 
-The Product Backlog supports:
+### 3.4 Evidence Selection and Analysis
 
-- Task organisation.
-- Project planning.
-- Visibility of requirements.
-- Sprint-related planning.
-- Responsibility allocation.
-- Reviewing available progress information.
+I selected the original Trello Product Backlog screenshots because they provide evidence of how our team organised its planned activities.
 
-The board records planned work and available checklist information. A card's existence does not prove that the activity was completed.
+The board documents work associated with:
 
-### Personal Reflection — STAR Method
+- Business and project planning.
+- Requirements gathering and analysis.
+- System design.
+- UI/UX design and prototyping.
+- Core development activities.
+- Testing and quality assurance.
+- Final project preparation.
 
-#### Situation
+The Product Backlog supports transparency by providing a shared reference for planned work.
 
-Our Book Swap SA project involved numerous planning, design, development, testing and documentation activities.
+Task descriptions and responsibility information can help team members understand the purpose and ownership of activities.
+
+However, a task appearing on Trello does not automatically establish that it was completed. Completion should be supported by relevant progress, development or testing records.
+
+### 3.5 Personal Reflection — STAR Method
+
+#### S — Situation
+
+Book Swap SA involved a range of business, design, development, testing and documentation activities.
 
 The team organised 54 day-based Trello task cards across seven planned sprints.
 
-This made task visibility and effective coordination important.
+With multiple tasks and team members, maintaining visibility of project activities was important.
 
-#### Task
+#### T — Task
 
-As **Project Facilitator / Scrum Master**, my responsibility was to support collaboration, communication and progress monitoring.
+As **Project Facilitator / Scrum Master**, my responsibility was to support the Agile process, communication and progress visibility.
 
-The Product Owner / Content Lead was responsible for product prioritisation, while my role focused on facilitation and visibility of project activities.
+Product prioritisation belonged to the Product Owner / Content Lead, while my assigned role focused on facilitation and coordination.
 
-#### Action
+#### A — Action
 
-I reviewed the Product Backlog structure and examined how project activities were organised across the seven planned sprints.
+I reviewed the organisation of the Product Backlog and examined how activities were distributed across the seven planned sprints.
 
-I considered the relationship between early research and design tasks and later development and testing activities.
+I considered the relationship between early planning activities and later system development and testing work.
 
-I also examined the importance of task descriptions, assigned responsibilities, checklist information and progress updates.
+I also examined the importance of clear task descriptions, responsibility allocation, checklist information and progress updates.
 
-#### Result and Learning
+This helped me understand how backlog information could support project discussions and progress monitoring.
 
-The Product Backlog helped me understand how a complex project can be organised into manageable activities.
+#### R — Result and Learning
 
-I learned that a clear backlog improves transparency and supports communication between team members.
+The Product Backlog helped me understand how a complex project can be divided into more manageable activities.
 
-I also recognised the importance of distinguishing planned activities from completed work.
+I learned that clear backlog organisation supports transparency, communication and accountability.
 
-In future projects, I would encourage regular backlog reviews, clearer task descriptions and consistent progress updates.
+I also recognised that backlog information should be reviewed regularly because project requirements and priorities can change.
 
-This experience strengthened my understanding of **Agile planning, task organisation, accountability and progress monitoring**.
+In future projects, I would encourage regular backlog reviews, clearer task ownership and consistent updates to task progress.
 
-**[Read the Complete Product Backlog Section](https://litha2810.github.io/Digital-Portfolio/#product-backlog)**
+This experience strengthened my understanding of **Agile planning, project coordination, task visibility and continuous improvement**.
+
+### 3.6 Connection to Other Agile Artefacts
+
+The Product Backlog connects the student requirements identified through user stories to the work planned for the project.
+
+The Sprint Backlog then provides a more focused view of activities associated with individual sprint objectives.
+
+The Agile Logbook can support this process by documenting activities, challenges and progress discussions.
+
+**[🌐 View Product Backlog on My Portfolio Website](https://litha2810.github.io/Digital-Portfolio/#product-backlog)**
 
 ---
 
 ## 4. Sprint Backlog
 
-### Evidence
+### 4.1 Introduction
 
-The Sprint Backlog organises planned activities into smaller tasks associated with specific sprint objectives.
+The Sprint Backlog identifies the work planned for a particular sprint.
 
-For Book Swap SA, the original Trello board contains sprint-related task records used to support project planning.
+It helps the team understand the sprint objective, relevant tasks and responsibilities.
 
-### Sprint Backlog Overview
+For Book Swap SA, sprint-related Trello task records were used to organise planned project activities.
+
+### 4.2 Planned Sprint Activities
 
 | Sprint | Planned Activities |
 |---|---|
-| Sprint 1 | Problem statement, stakeholders, market research and SWOT analysis |
-| Sprint 2 | Business goals, mission, vision, marketing and financial planning |
-| Sprint 3 | Requirements, user stories, database design and wireframes |
-| Sprint 4 | Homepage, registration page, dashboard and interface designs |
-| Sprint 5 | Registration, login, textbook listings, search and filtering |
-| Sprint 6 | Functional testing, bug fixing and User Acceptance Testing |
-| Sprint 7 | Documentation, project review, presentation and submission |
+| Sprint 1 | Problem statement, stakeholder identification, market research and SWOT analysis |
+| Sprint 2 | Mission, vision, marketing, business goals and financial planning |
+| Sprint 3 | Functional requirements, user stories, database design, UML and wireframes |
+| Sprint 4 | Homepage, registration interface, dashboard, listings and prototype design |
+| Sprint 5 | Registration, login, user profiles, textbook listings, search and filtering |
+| Sprint 6 | Functional testing, bug fixing, performance improvements and user acceptance testing |
+| Sprint 7 | Documentation, presentation, demonstration, final review and submission |
 
-### Original Sprint Backlog Evidence
+### 4.3 Original Evidence
 
-![Sprint 5 Development Tasks](evidence/product-backlog/product-backlog-13.jpeg)
+![Sprint 5 Development Planning](evidence/product-backlog/product-backlog-13.jpeg)
 
-*Figure 3: Original Sprint 5 Trello task evidence.*
+*Figure 3: Original Trello screenshot showing Sprint 5 planning activities.*
 
-**[View the Sprint Backlog Evidence](https://litha2810.github.io/Digital-Portfolio/#sprint-backlog)**
+**[🖼️ View the Seven Sprint Backlog Evidence Screenshots](https://litha2810.github.io/Digital-Portfolio/#sprint-backlog)**
 
-The Trello evidence demonstrates:
+### 4.4 Evidence Selection and Analysis
+
+I selected sprint-related Trello screenshots because they show how the team recorded activities associated with different project stages.
+
+The evidence demonstrates:
 
 - Sprint-related planning.
-- Documented development activities.
-- Task descriptions.
-- Visibility of recorded responsibilities.
-- Available checklist information.
+- Organisation of intended development activities.
+- Documented task descriptions.
+- Visibility of assigned responsibilities where recorded.
+- Available checklist and planning information.
 
-The completion status of specific activities must be verified using original progress and testing records.
+The Sprint 5 evidence is particularly relevant because it includes planned core development activities associated with the student marketplace.
 
-### Personal Reflection — STAR Method
+These screenshots provide evidence of planned sprint work; actual completion must be assessed using project progress, development or testing records.
 
-#### Situation
+### 4.5 Personal Reflection — STAR Method
 
-Book Swap SA was organised into seven planned sprints.
+#### S — Situation
 
-Each sprint focused on different project activities, including planning, design, development, testing and finalisation.
+Book Swap SA was organised into seven planned sprints covering different project activities.
 
-These activities required communication and coordination between team members with different responsibilities.
+These included business planning, requirements analysis, interface design, development, testing and finalisation.
 
-#### Task
+The activities required collaboration between team members with different assigned responsibilities.
 
-As **Project Facilitator / Scrum Master**, my responsibility was to support sprint coordination, communication and progress monitoring.
+#### T — Task
 
-I needed to understand planned activities, responsibilities and potential challenges affecting sprint progress.
+As **Project Facilitator / Scrum Master**, my responsibility was to support communication, coordination and progress monitoring.
 
-#### Action
+I needed to understand the relationship between sprint objectives, planned tasks, responsibilities and potential challenges.
 
-I reviewed the sprint-related Trello cards and examined how work was distributed across the project stages.
+#### A — Action
 
-I considered the relationship between sprint objectives, task allocation and dependencies.
+I reviewed the sprint-related Trello cards and examined how planned activities were distributed across the seven sprints.
 
-I also identified information that would be useful during progress discussions, including task ownership, checklist status, blockers and next steps.
+I considered the dependencies between activities, including how requirements and design decisions influence later development and testing work.
 
-#### Result and Learning
+I also identified the information useful for progress discussions, such as task ownership, outstanding work, blockers and next steps.
 
-The Sprint Backlog helped me understand the value of dividing project work into smaller and manageable stages.
+#### R — Result and Learning
 
-I learned that sprint coordination requires clear responsibilities, regular communication and accurate progress information.
+The Sprint Backlog helped me understand how project activities can be organised around smaller, time-focused objectives.
 
-I also recognised that planned activities may need adjustment when project challenges arise.
+I learned that realistic sprint goals, clear task responsibilities and regular communication are important for effective coordination.
 
-In future projects, I would encourage clearer sprint goals, regular progress discussions and better documentation of blockers.
+I also recognised that project challenges may require adjustments to planned activities.
 
-This experience strengthened my understanding of **sprint planning, task coordination, progress monitoring and continuous improvement**.
+In future projects, I would encourage more explicit sprint goals, regular progress discussions and improved documentation of blockers and sprint-review outcomes.
 
-**[Read the Complete Sprint Backlog Section](https://litha2810.github.io/Digital-Portfolio/#sprint-backlog)**
+This experience strengthened my understanding of **sprint planning, Agile coordination, progress monitoring and adaptability**.
+
+### 4.6 Connection to Other Agile Artefacts
+
+The Sprint Backlog translates planned project work into sprint-related activities.
+
+It builds on the requirements and activities recorded in the User Stories and Product Backlog.
+
+The Agile Logbook complements this evidence by recording dated project discussions, activities and challenges.
+
+**[🌐 View Sprint Backlog on My Portfolio Website](https://litha2810.github.io/Digital-Portfolio/#sprint-backlog)**
 
 ---
 
 ## 5. Agile Logbook
 
-### Evidence
+### 5.1 Introduction
 
-The Agile Logbook records project activities, progress, challenges, planned work and lessons learned.
+The Agile Logbook records project activities, discussions, progress, challenges and opportunities for improvement.
 
-The original Book Swap SA logbook includes dated records from July and August 2026.
+It supports project monitoring by providing dated information about work undertaken or discussed during different reporting periods.
 
-### Recorded Reporting Periods
+For Book Swap SA, the available original logbook evidence contains records from July and August 2026.
 
-| Reporting Period | Documented Focus |
+### 5.2 Recorded Reporting Periods
+
+| Reporting Period | Recorded Focus |
 |---|---|
 | 14–17 July 2026 | Business Proposal Preparation and Presentation |
 | 20–24 July 2026 | Requirements, User Stories and Backlog Planning |
 | 10–14 August 2026 | Project Reviews, Trello Tracking and Feedback |
 
-### Original Agile Logbook Evidence
+### 5.3 Original Evidence
 
-![Agile Logbook July 2026](evidence/agile-logbook/01_July_14-17_Logbook_Tuesday.jpeg)
+![Book Swap SA Agile Logbook](evidence/agile-logbook/01_July_14-17_Logbook_Tuesday.jpeg)
 
-*Figure 4: Original dated Agile Logbook record.*
+*Figure 4: Original dated Agile Logbook evidence from the July reporting period.*
 
-**[View All Eight Agile Logbook Screenshots](https://litha2810.github.io/Digital-Portfolio/#agile-logbook)**
+**[🖼️ View All Eight Original Agile Logbook Screenshots](https://litha2810.github.io/Digital-Portfolio/#agile-logbook)**
 
-### Recorded Activities
+### 5.4 Summary of Recorded Activities
 
-**14–17 July 2026 — Business Proposal**
+#### 14–17 July 2026 — Business Proposal
 
-The project records describe preparation and presentation of the Book Swap SA business proposal.
+The logbook records describe preparation and presentation activities associated with the Book Swap SA business proposal.
 
 Challenges included limited preparation time and technical difficulties during the presentation.
 
-**20–24 July 2026 — Project Planning**
+These challenges demonstrate the importance of preparation, communication and contingency planning.
 
-The records describe discussions about requirements, user stories, backlog improvements and planning activities.
+#### 20–24 July 2026 — Requirements and Planning
 
-Task distribution and realistic prioritisation were important considerations.
+The records describe discussions relating to project requirements, user stories, backlog organisation and task allocation.
 
-**10–14 August 2026 — Progress Review**
+These activities emphasised the importance of clear responsibilities, realistic planning and communication.
 
-The records describe project progress discussions, Trello reviews, planning updates and feedback.
+#### 10–14 August 2026 — Project Progress Reviews
 
-These activities highlighted the importance of communication and visibility of outstanding tasks.
+The logbook records describe project reviews, Trello-related discussions, planning updates and feedback.
 
-### Personal Reflection — STAR Method
+These activities highlight the importance of monitoring project work and maintaining visibility of planned and outstanding tasks.
 
-#### Situation
+### 5.5 Evidence Selection and Analysis
 
-The Book Swap SA Agile Logbook contains dated project records from July and August 2026.
+I selected the original dated Agile Logbook screenshots because they provide evidence of project activities and challenges recorded during the available reporting periods.
 
-These records document activities involving the business proposal, requirements planning, backlog organisation and project progress reviews.
+The logbook is especially relevant to my assigned role because the Team Charter identifies sprint progress monitoring as one of my Scrum Master responsibilities.
 
-The records also describe challenges that affected planning and presentation activities.
+The evidence provides an opportunity to examine:
 
-#### Task
+- Project communication.
+- Recorded activities.
+- Planning challenges.
+- Progress discussions.
+- Responsibility allocation.
+- Areas for improvement.
 
-As **Project Facilitator / Scrum Master**, my assigned responsibility included monitoring sprint progress through the Agile Logbook and supporting team communication.
+The available screenshots cover the documented reporting periods and should not be interpreted as a complete record of every day of the project.
 
-The logbook provided a way to review recorded activities, planned work and challenges.
+### 5.6 Personal Reflection — STAR Method
 
-#### Action
+#### S — Situation
 
-I reviewed the dated Agile Logbook entries alongside the Trello planning records.
+The Book Swap SA Agile Logbook contains dated records of project activities from July and August 2026.
 
-I organised the information into reporting periods and identified the documented activities, challenges and learning opportunities.
+These records include business proposal preparation, requirements discussions, backlog planning and progress reviews.
 
-I considered how consistent records of completed work, planned activities and blockers could improve progress discussions.
+The records also identify challenges, including presentation preparation difficulties and technical problems.
 
-#### Result and Learning
+#### T — Task
 
-The Agile Logbook helped me understand the importance of accurate project records and regular progress reviews.
+As **Project Facilitator / Scrum Master**, my assigned role included monitoring sprint progress through the Agile Logbook and supporting communication within the team.
 
-The recorded presentation difficulties demonstrated the importance of preparation, contingency planning and communication.
+Understanding recorded activities and challenges was important for identifying potential improvements to the Agile process.
 
-The planning activities highlighted the value of manageable tasks, fair responsibility allocation and realistic project priorities.
+#### A — Action
 
-In future projects, I would encourage more consistent dated logbook entries and clearer records of decisions, blockers, responsible members and next steps.
+I reviewed the original dated Agile Logbook records and compared their activities with the project planning information available on Trello.
 
-This experience strengthened my understanding of **Agile monitoring, accountability, project facilitation and continuous improvement**.
+I organised the available information into reporting periods and examined the relationship between activities, challenges and follow-up planning.
 
-**[Read the Complete Agile Logbook Section](https://litha2810.github.io/Digital-Portfolio/#agile-logbook)**
+I considered how consistent documentation of completed activities, planned work, blockers and responsibilities could support more effective progress discussions.
+
+#### R — Result and Learning
+
+The Agile Logbook helped me recognise the importance of accurate records and regular project reviews.
+
+The recorded presentation difficulties demonstrated the value of preparation, communication and contingency planning.
+
+The planning activities highlighted the importance of task allocation, realistic priorities and accountability.
+
+In future projects, I would encourage consistent dated logbook entries, clearer responsibility tracking and more detailed documentation of blockers and decisions.
+
+This experience strengthened my understanding of **Agile monitoring, professional accountability, communication and continuous improvement**.
+
+### 5.7 Connection to Other Agile Artefacts
+
+The Agile Logbook complements the Team Charter, User Stories, Product Backlog and Sprint Backlog by recording activities and challenges over time.
+
+It can help the team identify whether planning arrangements remain effective and where additional support or changes may be necessary.
+
+**[🌐 View Agile Logbook on My Portfolio Website](https://litha2810.github.io/Digital-Portfolio/#agile-logbook)**
 
 ---
 
-## Project Documentation
+## Supporting Project Documentation
 
-This section contains supporting documents associated with the planning, design and development of Book Swap SA.
+Supporting documentation provides additional information about the planning, design and presentation of Book Swap SA.
 
-These documents provide additional project context and are separate from the five assessed Agile artefacts.
+This section is supplementary and does not replace the five Agile artefacts assessed by the rubric.
 
-### 1. Book Swap SA Brand Guide
+### Book Swap SA Brand Guide
 
-The Brand Guide documents the visual identity of Book Swap SA.
+The Book Swap SA Brand Guide documents the intended visual identity of the project.
 
 It provides guidance on:
 
 - Brand identity.
-- Logo usage.
+- Logo presentation and usage.
 - Colour palette.
 - Typography.
-- Interface presentation.
-- Consistency of visual design elements.
+- Visual design standards.
+- Consistency across interface elements.
 
-**[📄 View the Book Swap SA Brand Guide](documentation/brand-guide.pdf)**
+**[📄 View Book Swap SA Brand Guide](documentation/brand-guide.pdf)**
 
-### 2. Connection to Sprint 4 — UI/UX Design
+*Note: This link requires the actual Brand Guide PDF to be uploaded at the stated repository path.*
 
-The Brand Guide is relevant to Sprint 4, which includes interface design and prototype development.
+### Connection to Sprint 4
 
-Shared design guidelines can help team members maintain consistent visual elements throughout the platform.
+The Brand Guide relates to **Sprint 4 — UI/UX Design and Prototype Development**.
 
-The document supports communication about the intended appearance and presentation of the project.
+Shared design guidelines can help team members establish a consistent appearance across the application's interfaces.
 
-### 3. Personal Reflection — STAR Method
+This documentation is useful for supporting communication about the project's intended visual identity.
 
-#### Situation
+### Supporting Reflection — STAR Method
 
-Sprint 4 focused on UI/UX design and prototype development.
+#### S — Situation
 
-During this stage, consistent visual guidance was relevant to the creation of a unified interface.
+Sprint 4 focused on interface design and prototype planning.
 
-The Brand Guide provides supporting documentation for the project's intended visual identity.
+Consistent branding and visual design were relevant to these activities because the project required a unified presentation.
 
-#### Task
+#### T — Task
 
-As **Project Facilitator / Scrum Master**, my assigned role was to support project communication and coordination.
+As Project Facilitator / Scrum Master, my assigned responsibility was to support project communication and coordination.
 
-Design implementation remained the responsibility of the relevant development and UI/UX team members.
+The implementation of UI/UX designs remained the responsibility of the relevant team members.
 
-#### Action
+#### A — Action
 
-I connected the Brand Guide to the Sprint 4 planning activities and considered how shared design documentation could support collaboration.
+I connected the Brand Guide to the activities associated with Sprint 4 and considered how shared design documentation could support collaboration.
 
-I examined the importance of maintaining accessible, consistent project references for team members.
+I examined the importance of maintaining accessible and consistent project references.
 
-This reflection does not claim that I independently created the Brand Guide.
+This reflection does not claim that I independently designed or developed the Brand Guide.
 
-#### Result and Learning
+#### R — Result and Learning
 
-I learned that supporting documentation can contribute to better communication and more consistent project outputs.
+I learned that supporting documentation can strengthen collaboration and improve consistency across project outputs.
 
-A shared Brand Guide helps establish a common reference for the platform's visual identity.
+In future projects, I would encourage teams to maintain organised documentation and communicate design changes to relevant team members.
 
-In future projects, I would encourage the team to maintain updated documentation and communicate changes to relevant members.
+This experience contributed to my understanding of **documentation, project coordination and effective teamwork**.
 
-This strengthened my understanding of **project documentation, coordination, collaboration and design consistency**.
-
-**[View the Project Documentation Section](https://litha2810.github.io/Digital-Portfolio/#documentation)**
+**[🌐 View Project Documentation on My Portfolio Website](https://litha2810.github.io/Digital-Portfolio/#documentation)**
 
 ---
 
-## How the Artefacts Connect
+## How the Agile Artefacts Connect
 
-The five Agile artefacts demonstrate how project management activities contribute towards a shared objective.
+The five assessed Agile artefacts serve different but related purposes.
 
-### Agile Team Charter
+| Agile Artefact | Main Purpose | Connection to the Project |
+|---|---|---|
+| Agile Team Charter | Establish team responsibilities and working arrangements | Provides a foundation for collaboration and accountability |
+| User Stories and Tasks | Define requirements from the user's perspective | Connects student needs to planned functionality |
+| Product Backlog | Organise project requirements and planned activities | Provides visibility of the overall planned work |
+| Sprint Backlog | Organise work associated with specific sprints | Links project activities to sprint-related objectives |
+| Agile Logbook | Record project activities and challenges | Supports progress monitoring and learning |
 
-Establishes team responsibilities, shared objectives and communication expectations.
+### Example of the Connection
 
-### User Stories and Tasks
+The original Sprint 5 Day 37 Trello card demonstrates a planned requirement for searching and filtering textbook listings.
 
-Identify student requirements and connect them to planned system functionality.
+This requirement:
 
-### Product Backlog
+1. Represents a need identified from the student's perspective.
+2. Relates to the planned work recorded on Trello.
+3. Is associated with Sprint 5 development activities.
+4. Can be monitored through progress discussions and project records.
+5. Contributes to the broader objective of improving textbook discovery.
 
-Organises the activities planned to address project requirements.
+The Team Charter provides the responsibilities and communication arrangements needed to support the project.
 
-### Sprint Backlog
-
-Breaks planned project work into smaller sprint-related activities.
-
-### Agile Logbook
-
-Records project activities, progress, challenges and opportunities for improvement.
-
-Together, these artefacts demonstrate the e-portfolio learning process:
-
-**Collect → Select → Reflect → Connect**
-
-Through reviewing these artefacts, I developed a deeper understanding of Agile teamwork, planning, coordination and continuous improvement.
-
-My role as Scrum Master / Project Facilitator demonstrated the importance of clear responsibilities, effective communication and accurate progress information.
+Together, the artefacts demonstrate how planning, requirements, task organisation and progress monitoring contribute to Agile project management.
 
 ---
 
-## Evidence and Referencing Notes
+## Overall Personal Reflection
+
+### What I Learned About Agile Project Management
+
+Working with the Book Swap SA Agile artefacts helped me understand that successful project management involves more than creating task lists and following a schedule.
+
+It requires clear communication, shared responsibilities, realistic planning, progress monitoring and the ability to respond to challenges.
+
+### Leadership and Communication
+
+The Team Charter demonstrated the importance of defining responsibilities and maintaining agreed working arrangements.
+
+As Project Facilitator / Scrum Master, I learned that facilitation should encourage collaboration and accountability while respecting each member's assigned responsibilities.
+
+### Requirements and Task Planning
+
+The User Stories and Product Backlog helped me understand how project requirements can be translated into smaller, manageable activities.
+
+I learned that clearly documented requirements and acceptance criteria support a shared understanding of expected functionality.
+
+### Sprint Coordination
+
+The Sprint Backlog demonstrated the importance of organising work into focused activities associated with particular project stages.
+
+I recognised the value of clear task ownership, realistic planning and communication about dependencies and blockers.
+
+### Monitoring and Continuous Improvement
+
+The Agile Logbook showed why dated project records are valuable.
+
+I learned that recording activities, challenges and decisions can help teams understand their progress and identify areas requiring improvement.
+
+### Recommendations for Future Projects
+
+Based on this learning experience, I would recommend:
+
+- Establishing clear responsibilities at the beginning of the project.
+- Reviewing the Team Charter when working arrangements change.
+- Writing acceptance criteria for important user stories.
+- Maintaining clear task descriptions and status updates.
+- Encouraging regular sprint progress discussions.
+- Recording blockers, decisions and follow-up actions.
+- Maintaining consistent project documentation.
+- Supporting continuous reflection and improvement.
+
+### Professional Development
+
+This portfolio strengthened my understanding of the responsibilities associated with the Scrum Master / Project Facilitator role.
+
+The experience contributed to my development in:
+
+- Team communication.
+- Agile coordination.
+- Planning and task organisation.
+- Progress monitoring.
+- Accountability.
+- Collaboration.
+- Problem-solving.
+- Reflective learning.
+
+These skills are relevant to future software development projects and professional IT environments.
+
+---
+
+## Evidence and References
 
 ### Primary Project Evidence
 
-- Original Book Swap SA Agile Team Charter.
-- Original Book Swap SA Trello board.
-- Product Backlog screenshots.
-- Sprint Backlog screenshots.
-- Sprint 5, Day 37 User Story screenshot.
-- Original dated Agile Logbook records.
-- Book Swap SA Brand Guide, when uploaded.
+The following original Book Swap SA artefacts support this portfolio:
+
+**Agile Team Charter**
+
+[Original Agile Team Charter PDF](evidence/agile-team-charter.pdf)
+
+**User Stories and Tasks**
+
+[Original Sprint 5 Day 37 User Story Screenshot](evidence/user-stories/Trello%20Story%20and%20Task%20Evidence.jpeg)
+
+**Product Backlog**
+
+[View Product Backlog Evidence](https://litha2810.github.io/Digital-Portfolio/#product-backlog)
+
+**Sprint Backlog**
+
+[View Sprint Backlog Evidence](https://litha2810.github.io/Digital-Portfolio/#sprint-backlog)
+
+**Agile Logbook**
+
+[View Original Dated Logbook Evidence](https://litha2810.github.io/Digital-Portfolio/#agile-logbook)
+
+**Original Trello Board**
+
+[Book Swap SA Project Management Board](https://trello.com/b/zw19sdMT)
 
 ### Assessment Reference
 
-Cape Peninsula University of Technology (CPUT). (2026). *PRP370/371/372S Assessment 2 — October 2026*. Project Presentation 3.
-
-### Project Management Tool
-
-**Trello:** [Book Swap SA Project Board](https://trello.com/b/zw19sdMT)
+Cape Peninsula University of Technology (CPUT). (2026). *PRP370/371/372S Assessment 2 — October 2026*. Cape Peninsula University of Technology.
 
 ### Academic Integrity
 
-This portfolio distinguishes between planned functionality, recorded project activities and verified completed work.
+This portfolio presents my individual analysis and reflection of the team's original Agile project artefacts.
 
-The STAR reflections explain my learning as Project Facilitator / Scrum Master.
+The descriptions distinguish between planned activities, recorded project evidence and verified implementation outcomes.
 
-Claims of completed activities or implemented features should be supported by original project records.
+The personal reflections are written from the perspective of my assigned role as Project Facilitator / Scrum Master.
+
+Where evidence does not confirm completion of a particular activity, the portfolio describes the activity as planned or documented rather than completed.
 
 ---
 
-**[Back to Top](#book-swap-sa--agile-digital-portfolio)**
+## Portfolio Submission Links
 
-**[Open My Live Agile Portfolio](https://litha2810.github.io/Digital-Portfolio/)**
+### Live Agile Digital Portfolio
+
+**[🌐 OPEN MY LIVE AGILE DIGITAL PORTFOLIO](https://litha2810.github.io/Digital-Portfolio/)**
+
+### Complete GitHub Repository
+
+**[📂 OPEN MY COMPLETE GITHUB REPOSITORY](https://github.com/Litha2810/Digital-Portfolio)**
+
+Repository URL:
+
+https://github.com/Litha2810/Digital-Portfolio.git
+
+### Project Trello Board
+
+**[📋 OPEN BOOK SWAP SA TRELLO BOARD](https://trello.com/b/zw19sdMT)**
+
+---
+
+**Prepared by:** Litha Owethu Mazibuko  
+**Assigned Role:** Project Facilitator / Scrum Master  
+**Institution:** Cape Peninsula University of Technology  
+**Module:** Project Presentation 3 (PRP372S)  
+**Academic Year:** 2026
+
+---
+
+[⬆ Back to Top](#book-swap-sa--agile-digital-portfolio)
